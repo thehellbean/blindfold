@@ -16,4 +16,8 @@ public class Board {
     public Square getSquare(int rank, int file) {
         return this.boardState.get(file).get(rank);
     }
+
+    public boolean hasPiece(int rank, int file) {
+        return this.boardState.get(file).get(rank) != null;
+    }
 }
